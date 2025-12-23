@@ -11,7 +11,7 @@ return {
     dependencies = {
         'nvim-treesitter/nvim-treesitter-textobjects'
     },
- 
+
     -- config = function(_, opts)
     -- end,
 
