@@ -1,10 +1,14 @@
 return {
-  'nvim-treesitter/nvim-treesitter',
-  lazy = false,
-  build = ':TSUpdate',
-  event = "VeryLazy", -- load it after lazy has already load the editor.
-  -- main = "nvim-treesitter.configs",
-  opts = {
+    'nvim-treesitter/nvim-treesitter',
+    lazy = false,
+    build = ':TSUpdate',
+    event = "VeryLazy", -- load it after lazy has already load the editor.
+
+    -- branch = 'master'
+    -- main = "nvim-treesitter.configs",
+
+    branch = 'main',
+    opts = {
       ensure_installed = {
           "lua",
           "luadoc",
@@ -28,5 +32,5 @@ return {
       indent = {
           enable = true
       },
-  },
+    },
 }
