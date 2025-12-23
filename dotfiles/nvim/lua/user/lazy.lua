@@ -1,6 +1,9 @@
 -- Lazy install bootstrap snippet
+-- vim.fn.stdpath("data") returns the nvim data path
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 
+-- vim.loop.fs_stat(lazypath) returns if the path exists
+-- if it does not start (first start), clone the lazy.nvim repo
 if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
@@ -12,11 +15,10 @@ if not vim.loop.fs_stat(lazypath) then
 	})
 end
 
+-- add lazypath to the nvim runtime path
 vim.opt.rtp:prepend(lazypath)
 
-local lazy = require("lazy")
-
-lazy.setup(
+require("lazy").setup(
     {
       -- Determine folder to search for plugins
       -- to be installed
@@ -29,6 +31,3 @@ lazy.setup(
             },
     }
 )
-
--- vim.cmd.colorscheme("nord")
--- vim.cmd.colorscheme("catppuccin")
