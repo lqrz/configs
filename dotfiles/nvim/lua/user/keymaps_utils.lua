@@ -1,3 +1,4 @@
+
 local M = {}
 
 local function bind(op, outer_opts)
@@ -18,3 +19,4 @@ M.inoremap = bind("i")
 M.tnoremap = bind("t")
 
 return M
+
