@@ -1,0 +1,12 @@
+{
+	"ignored_packages":
+	[
+		"Vintage",
+	],
+	"theme": "Default Dark.sublime-theme",
+	"color_scheme": "Catppuccin Frappe.sublime-color-scheme",
+	"index_files": true,
+	"neovintageous_build_version": 13200,
+	"vintageous_use_ctrl_keys": true,
+	"vintageous_use_super_keys": false,	
+}
