@@ -22,7 +22,8 @@ require("lazy").setup(
     {
       -- Determine folder to search for plugins
       -- to be installed
-        { import = "plugins" },
+        { import = "user.plugins" },
+        { import = "user.plugins.lsp" },
     },
     {
         change_detection = {
