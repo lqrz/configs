@@ -216,14 +216,14 @@ nnoremap("gx", ":sil !open <cWORD><cr>", { silent = true })
 -- end, { desc = "Search [G]it [F]iles" })
 
 -- Telescope keybinds --
-nnoremap("<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
-nnoremap("<leader>sb", require("telescope.builtin").buffers, { desc = "[S]earch Open [B]uffers" })
-nnoremap("<leader>sf", function() require("telescope.builtin").find_files({ hidden = true }) end, { desc = "[S]earch [F]iles" })
-nnoremap("<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
-nnoremap("<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
-nnoremap("<leader>sc", function() require("telescope.builtin").commands(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[S]earch [C]ommands" })
-nnoremap("<leader>/", function() require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[/] Fuzzily search in current buffer]" })
-nnoremap("<leader>ss", function() require("telescope.builtin").spell_suggest(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[S]earch [S]pelling suggestions" })
+-- nnoremap("<leader>?", require("telescope.builtin").oldfiles, { desc = "[?] Find recently opened files" })
+-- nnoremap("<leader>sb", require("telescope.builtin").buffers, { desc = "[S]earch Open [B]uffers" })
+-- nnoremap("<leader>sf", function() require("telescope.builtin").find_files({ hidden = true }) end, { desc = "[S]earch [F]iles" })
+-- nnoremap("<leader>sh", require("telescope.builtin").help_tags, { desc = "[S]earch [H]elp" })
+-- nnoremap("<leader>sg", require("telescope.builtin").live_grep, { desc = "[S]earch by [G]rep" })
+-- nnoremap("<leader>sc", function() require("telescope.builtin").commands(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[S]earch [C]ommands" })
+-- nnoremap("<leader>/", function() require("telescope.builtin").current_buffer_fuzzy_find(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[/] Fuzzily search in current buffer]" })
+-- nnoremap("<leader>ss", function() require("telescope.builtin").spell_suggest(require("telescope.themes").get_dropdown({ previewer = false })) end, { desc = "[S]earch [S]pelling suggestions" })
 
 -- -- LSP Keybinds (exports a function to be used in ../../after/plugin/lsp.lua b/c we need a reference to the current buffer) --
 -- M.map_lsp_keybinds = function(buffer_number)
