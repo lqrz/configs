@@ -92,8 +92,8 @@ format = '[[($all_status$ahead_behind )](fg:base bg:green)]($style)'
 
 [python]
 symbol = ""
-style = "bg:teal"
-format = '[[ $symbol( $version) ](fg:base bg:teal)]($style)'
+style = "green"
+format = '[ $symbol $version( \($virtualenv\)) ]($style)'
 
 [docker_context]
 symbol = ""
